@@ -1,0 +1,37 @@
+body{
+    overflow-x:hidden;
+}
+
+#socialMedia{
+    margin-right:20px;
+}
+
+.crtlogobg{
+    background:#006BAD;
+}
+
+.crtlogocolor{
+    color:#006BAD;
+}
+
+.crtbg{
+    background:#01255E;
+}
+
+.crtcolor{
+    color:#01255E;
+}
+
+#socialMedia ul{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+}
+
+#socialMedia ul li{
+    margin-left:10px;
+}
+
+#socialMedia i{
+    font-size:25px;
+}
