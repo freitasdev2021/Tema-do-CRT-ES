@@ -23,6 +23,57 @@ function linque($url){
     echo get_permalink(get_page_by_path($url)); 
 }
 
+function mudar_diretorio_uploads( $upload ) {
+    // Diretório dentro do tema onde os arquivos de upload serão salvos
+    $newdir = get_template_directory() . '/files';
+    
+    // URL para acessar os arquivos
+    $newurl = get_template_directory_uri() . '/files';
+
+    // Atualizando os valores do diretório e URL de upload
+    $upload['path'] = $newdir;
+    $upload['subdir'] = ''; // Remover subdiretório por padrão
+    $upload['basedir'] = $newdir;
+    $upload['url'] = $newurl;
+    $upload['baseurl'] = $newurl;
+
+    return $upload;
+}
+
+
+add_filter('upload_dir', 'mudar_diretorio_uploads');
+
+
+function getPostagens($args){
+    // Obtém as postagens como um array
+    $decretos_posts = get_posts( $args );
+    
+    // Verifica se há postagens e exibe
+    if ( !empty( $decretos_posts ) ) {
+        return $decretos_posts;
+    } else {
+        return false;
+    }
+}
+
+function postContent($content){
+    // Localiza a palavra "Baixar" no conteúdo
+    $stringConteudo = str_replace('Baixar',"<>",filter_var($content,FILTER_SANITIZE_STRING));
+    $conteudo = explode("<>",$stringConteudo);
+    // Retorna um array com o link e o conteúdo separados
+    return array(
+        'link' => $conteudo[0], // Remove espaços em branco
+        'conteudo' => $conteudo[1] // Remove espaços em branco
+    );
+}
+
+function viewAtual(){
+    if (isset($_GET['section'])) {
+        $section = $_GET['section'];
+        return $section; // Exemplo de saída: historia
+    }    
+}
+
 //
 function fr_theme_support(){
     add_theme_support('title-tag');

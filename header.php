@@ -74,10 +74,10 @@
             Instituicional
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="<?php linque('missao')?>">Missão. visão e valores</a></li>
-            <li><a class="dropdown-item" href="#">Hostória</a></li>
-            <li><a class="dropdown-item" href="#">Modalidades Técnicas</a></li>
-            <li><a class="dropdown-item" href="#">Eleições 2022</a></li>
+            <li><a class="dropdown-item" href="<?=linque('missao')."?section=missao"?>">Missão. visão e valores</a></li>
+            <li><a class="dropdown-item" href="<?=linque('missao')."?section=historia"?>">História</a></li>
+            <li><a class="dropdown-item" href="<?=linque('missao')."?section=quemsao"?>">Modalidades Técnicas</a></li>
+            <li><a class="dropdown-item" href="<?php linque('eleicoes')?>">Eleições 2022</a></li>
           </ul>
         </li>
         <!--LEGISLAÇÃO FEDERAL-->

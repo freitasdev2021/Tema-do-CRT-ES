@@ -14,8 +14,24 @@ body{
     color:#006BAD;
 }
 
+.editais{
+    width:100%;
+    flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+}
+
+.edital {
+    width:40%;
+    margin:10px;
+}
+
 .crtbg{
     background:#01255E;
+}
+
+.cardi .card{
+    margin:5px;
 }
 
 .crtcolor{
