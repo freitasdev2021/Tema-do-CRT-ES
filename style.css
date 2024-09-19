@@ -14,6 +14,39 @@ body{
     color:#006BAD;
 }
 
+.contentRegistros{
+    background:#F9F9F9;
+}
+
+.linksUteis{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.linksUteis img{
+    width:150px;
+    height:80px;
+}
+
+.registros{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.registros .registro{
+    margin:5px;
+    width:20%;
+}
+
+.linksUteis a{
+    text-decoration:none;
+    margin:5px;
+    color:black;
+}
+
 .editais{
     width:100%;
     flex-wrap:wrap;

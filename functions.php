@@ -67,6 +67,16 @@ function postContent($content){
     );
 }
 
+function postBanner($content){
+    // Localiza a palavra "Baixar" no conteúdo
+    $stringConteudo = str_replace('Baixar',"<>",filter_var($content,FILTER_SANITIZE_STRING));
+    $conteudo = explode("<>",$stringConteudo);
+    // Retorna um array com o link e o conteúdo separados
+    return array(
+        'link' => $conteudo[0], // Remove espaços em branco
+    );
+}
+
 function viewAtual(){
     if (isset($_GET['section'])) {
         $section = $_GET['section'];
