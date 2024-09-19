@@ -18,6 +18,19 @@ body{
     background:#F9F9F9;
 }
 
+.cartilhas{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.cartilhas img{
+    width:500px;
+    height:300px;
+    margin:5px;
+}
+
 .linksUteis{
     width:100%;
     display:flex;

@@ -2,7 +2,6 @@
 //INCLUDES
 
 //HOOKS
-
 //carregar css e js
 function fr_scripts(){
     wp_enqueue_style('main',urlFile('style.css'));
