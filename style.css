@@ -31,6 +31,15 @@ body{
     margin:5px;
 }
 
+.sirvissos .col{
+    text-align:center;
+}
+
+.sirvissos img{
+    width:250px;
+    height:180px;
+}
+
 .linksUteis{
     width:100%;
     display:flex;
@@ -47,6 +56,14 @@ body{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 600px) {
+    .registros .registro{
+        margin:5px;
+        width:100%;
+    }
 }
 
 .registros .registro{

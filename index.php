@@ -41,72 +41,79 @@
 <br>
 <!--SERVIÇOS-->
 <div class="contentRegistros p-3">
-   <div class="registros">
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/engenheiro.png')?>" width="120px" height="120px">
-            <h5 class="card-title">Registro Profissional</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+   <div class="row row-cols-1 row-cols-md-4 g-4 sirvissos">
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/engenheiro.png')?>" class="card-img-top mx-auto d-block mx-auto d-block" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Registro Profissional</h5>
+               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/fabrica.png')?>" width="120px" height="120px">
-            <h5 class="card-title">Registro Empresa</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/fabrica.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Registro Empresa</h5>
+               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/maquina.png')?>" width="120px" height="120px">
-            <h5 class="card-title">TRT - Termo de Responsabilidade Técnica</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/maquina.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">TRT - Termo de Responsabilidade Técnica</h5>
+               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/documento-de-texto.png')?>" width="120px" height="120px">
-            <h5 class="card-title">Certidões</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/documento-de-texto.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Certidões</h5>
+               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/web-chat.png')?>" width="120px" height="120px">
-            <h5 class="card-title">Ouvidoria CFT/CRT's</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/web-chat.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Ouvidoria CFT/CRT's</h5>
+               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/configuracao.png')?>" width="120px" height="120px">
-            <h5 class="card-title">Modalidades Técnicas</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/configuracao.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
+               <h5 class="card-title">Modalidades Técnicas</h5>
+               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/aprendendo.png')?>" width="120px" height="120px">
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/aprendendo.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
             <h5 class="card-title">Tutorial TRT</h5>
             <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
-      <div class="card registro" align="center">
-         <div class="card-body p-2">
-            <img src="<?=url('icons/file-and-folder.png')?>" width="120px" height="120px">
+      <div class="col">
+         <div class="card p-2">
+            <img src="<?=url('icons/file-and-folder.png')?>" class="card-img-top mx-auto d-block" alt="...">
+            <div class="card-body">
             <h5 class="card-title">Outros Serviços</h5>
             <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            </div>
          </div>
       </div>
-      <!---->
    </div>
 </div>
 <br>
@@ -126,7 +133,7 @@
 <!--TABELAS DE VALORES-->
 <br>
 <div class="registros p-2" style="background:#F9F9F9;">
-   <div class="accordion accordion-flush col-sm-10" id="accordionFlushExample">
+   <div class="accordion accordion-flush col-sm-12" id="accordionFlushExample">
       <div class="accordion" id="accordionExample">
          <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
@@ -212,6 +219,26 @@
                     <li>Emissão de certidão de quaisquer outros documentos e anotações: R$ 63,83</li>
                   </ul>
                </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div class="registros p-2 noticias">
+         
+</div>
+<div class="registros p-2">
+   <div class="card mb-3">
+      <div class="row g-0">
+         <div class="col-md-4">
+            <img src="<?=url('img/parcerias.jpeg')?>" class="img-fluid rounded-start" alt="...">
+         </div>
+         <div class="col-md-8">
+            <div class="card-body">
+            <h1 class="card-title">Parcerias</h1>
+            <p class="card-text">É um Técnico Industrial registrado?</p>
+            <p class="card-text">Agora você pode desfrutar das parcerias do CRT-ES!</p>
+            <a href="<?=linque('parceiros')?>" class="btn col-auto" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
