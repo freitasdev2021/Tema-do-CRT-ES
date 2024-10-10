@@ -47,7 +47,7 @@
             <img src="<?=url('icons/engenheiro.png')?>" class="card-img-top mx-auto d-block mx-auto d-block" alt="...">
             <div class="card-body">
                <h5 class="card-title">Registro Profissional</h5>
-               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+               <a href="https://corporativo.sinceti.net.br/app/view/sight/externo.php?form=CadastrarProfissional" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -56,7 +56,7 @@
             <img src="<?=url('icons/fabrica.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
                <h5 class="card-title">Registro Empresa</h5>
-               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+               <a href="https://corporativo.sinceti.net.br/app/view/sight/externo?form=CadastrarEmpresa" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -65,7 +65,7 @@
             <img src="<?=url('icons/maquina.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
                <h5 class="card-title">TRT - Termo de Responsabilidade Técnica</h5>
-               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+               <a href="https://corporativo.sinceti.net.br/app/view/sight/externo?form=ConsultarArt" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -74,7 +74,7 @@
             <img src="<?=url('icons/documento-de-texto.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
                <h5 class="card-title">Certidões</h5>
-               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+               <a href="https://corporativo.sinceti.net.br/app/view/sight/externo?form=ConsultarCertidaoSimples" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -83,7 +83,7 @@
             <img src="<?=url('icons/web-chat.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
                <h5 class="card-title">Ouvidoria CFT/CRT's</h5>
-               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+               <a href="https://cft-br.implanta.net.br/portalTransparencia/#OUV/Home" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -92,7 +92,7 @@
             <img src="<?=url('icons/configuracao.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
                <h5 class="card-title">Modalidades Técnicas</h5>
-               <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+               <a href="<?=linque('missao')."?section=quemsao"?>" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -101,7 +101,7 @@
             <img src="<?=url('icons/aprendendo.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
             <h5 class="card-title">Tutorial TRT</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            <a href="<?=get_template_directory_uri()."/files/Tutorial-TRT-CRT-ES.pdf"?>" download class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -110,7 +110,7 @@
             <img src="<?=url('icons/file-and-folder.png')?>" class="card-img-top mx-auto d-block" alt="...">
             <div class="card-body">
             <h5 class="card-title">Outros Serviços</h5>
-            <a href="#" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
+            <a href="https://www.cft.org.br/servicos/" class="btn col-sm-12" style="background:#034462; color:white;">Acessar</a>
             </div>
          </div>
       </div>
@@ -224,10 +224,37 @@
       </div>
    </div>
 </div>
-<div class="registros p-2 noticias">
-         
+<!--NOTICIAS-->
+<br>
+<h1 align="center">Noticias</h1>
+<div class="noticias">
+   <?php
+   $args = array(
+      'category_name' => 'Noticias', // Nome da categoria
+      'posts_per_page' => 7, // Limite de postagens
+      'post_status' => 'publish', // Apenas postagens publicadas
+   );
+   
+   foreach(getPostagens($args) as $n){
+      $postContent = getNoticias($n->post_content);
+      //print_r($postContent);
+      
+      $imagens = $postContent['Imagem'];
+      $textos = $postContent['Texto'];
+      $postUrl = get_permalink($n->ID);
+   ?>
+   <div class="noticia">
+   <a href="<?=$postUrl?>">
+      <img src="<?=$imagens?>" alt="<?=$n->post_title?>">
+         <strong><?=$n->post_title?></strong>
+      </a>
+   </div>
+   <?php
+   }
+   ?>
 </div>
-<div class="registros p-2">
+<!--AQUI VÃO AS NOTICIAS-->
+<div class="registros p-2" style="margin-top:100px;">
    <div class="card mb-3">
       <div class="row g-0">
          <div class="col-md-4">
@@ -244,8 +271,8 @@
       </div>
    </div>
 </div>
-<!--NOTICIAS-->
 <?php get_footer();?>
 <script>
    $(".caroseu").find("img").addClass("d-block w-100")
+   $(".noticias").find("img").addClass("figure-img img-fluid rounded")
 </script>

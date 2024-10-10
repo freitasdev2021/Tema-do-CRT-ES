@@ -6,6 +6,7 @@
 function fr_scripts(){
     wp_enqueue_style('main',urlFile('style.css'));
     wp_enqueue_style('font-awesome',urlFile('fontawesome/css/all.css'));
+    wp_enqueue_style('acessibilidade',urlFile('plugins/acessibilidade/dist/open-accessibility.min.css'));
     wp_enqueue_style('bootstrap','https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css');
     wp_register_script('bootstrapjs','https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js',array(), '5.3.3', true);
 }
@@ -64,6 +65,26 @@ function postContent($content){
         'link' => $conteudo[0], // Remove espaços em branco
         'conteudo' => $conteudo[1] // Remove espaços em branco
     );
+}
+
+function getNoticias($content){
+    $dom = new DOMDocument();
+    
+    // Suprimir warnings ao carregar HTML malformado
+    @$dom->loadHTML($content);
+
+    foreach ($dom->getElementsByTagName('img') as $img) {
+        $src = $img->getAttribute('src');
+        if ($src) {
+            $images[] = htmlspecialchars($src); // Armazena apenas o 'src' das imagens
+        }
+    }
+    $img = $dom->getElementsByTagName('img')->item(0);
+    // Extrair todas as imagens
+    
+    $return['Imagem'] = $img->getAttribute('src');
+    $return['Texto'] = filter_var($content,FILTER_SANITIZE_STRING);
+    return  $return;
 }
 
 function postBanner($content){

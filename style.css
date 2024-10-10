@@ -10,6 +10,31 @@ body{
     background:#006BAD;
 }
 
+.noticias{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    /* margin:5px; */
+    flex-wrap:wrap;
+}
+
+.noticia{
+    width:250px;
+    height:350px;
+    padding:0px;
+    margin:10px;
+}
+
+.noticia a{
+    text-decoration:none;
+}
+
+.noticia img{
+    height:250px;
+    width:100%;
+}
+
 .crtlogocolor{
     color:#006BAD;
 }
