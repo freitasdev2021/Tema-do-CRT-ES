@@ -25,44 +25,48 @@ $response2 = apiRequest(
 
 $Banners = json_decode($response2['body'],true);
 
-$response3 = apiRequest(
-    $api.'Galeria/2',
-    'GET',
-    [
-        "Limite" => 10
-    ],
-    [
-        "Authorization: ".$HeaderToken,
-        "Token: ".$Token
-    ]
-);
-
-$Vereadores = json_decode($response3['body'],true);
 //echo "<pre>";
 //print_r($Vereadores);
 //echo"</pre>";
 ?>
 <!--BANNER-->
-<section id="home" class="hero">
-    <div class="hero-slider">
-        <?php
-        $i = 0;
-        foreach($Banners as $b){
-        ?>
-            <div class="slide <?= $i === 0 ? 'active' : '' ?>" 
-                style="background-image: url(<?= $b['Foto'] ?>)">
-            </div>
-        <?php
-            $i++;
-        }
-        ?>
+<section id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="1" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="2" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="4" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="5" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleControls" data-bs-slide-to="6" aria-label="Slide 6"></button>
     </div>
-
-    <div class="hero-nav">
-        <span class="prev">&#10094;</span>
-        <span class="next">&#10095;</span>
-    </div>
-    <div class="hero-dots"></div>
+  <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">
+         <a href="https://www.crtes.gov.br/programa-anuidade-zero-crt-es/"><img src="<?=url('img/banners/Capa Site Anuidade 0.png')?>" style="height:auto; width:100%; object-fit: cover; display:block;" ></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+         <a href=""><img src="" style="height:auto; width:100%; object-fit: cover; display:block;" ></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+         <a href=""><img src="" style="height:auto; width:100%; object-fit: cover; display:block;" ></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+         <a href=""><img src="" style="height:auto; width:100%; object-fit: cover; display:block;" ></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+         <a href=""><img src="" style="height:auto; width:100%; object-fit: cover; display:block;" ></a>
+      </div>
+      <div class="carousel-item" data-bs-interval="10000">
+         <a href=""><img src="" style="height:auto; width:100%; object-fit: cover; display:block;" ></a>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </section>
 <!--SERVIÇOS MAIS PROCURADOS-->
 <div id="popup" class="popup-overlay">

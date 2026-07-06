@@ -1,0 +1,574 @@
+body{
+    overflow-x:hidden;
+}
+
+.mainNoticias{
+    width:70%;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.mainNoticias a{
+    text-decoration:none;
+}
+
+.registrosTabela{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.registroTabela{
+    width:70%;
+}
+
+.noticiaDestaque{
+    height:400px;
+    margin-top:5px;
+    width:50%;
+}
+
+.capaBaixo a{
+    font-family:Arial, Helvetica, sans-serif;
+    text-decoration:none;
+    color:white;
+    font-size:10px;
+}
+
+.titleInterno{
+    font-size:1.5em;
+    color:#216191;
+}
+
+.titleMain{
+    font-size:25px;
+}
+
+
+.noticiaDestaque .card{
+    height:405px;
+}
+
+.linhaNoticias{
+    width:50%;
+    height:550px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+}
+
+.linhaNoticiasUm{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width:100%;
+    height:200px;
+    margin-top:5px;
+    
+}
+
+.linhaNoticiasUm .card{
+    margin-left:5px;
+    height:200px;
+    width:45%;
+}
+
+.linhaNoticias .card img{
+    height:100px;
+}
+
+.linhaNoticias .card{
+    font-size:10px;
+}
+
+.linhaNoticias .card h6{
+    font-size:11px;
+}
+
+.noticiaDestaque img{
+    height:300px;
+}
+
+.linhaNoticiasDois .card{
+    margin-left:5px;
+    height:200px;
+    width:45%;
+}
+
+.linhaNoticiasDois{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    width:100%;
+    height:300px;
+    margin-top:5px;
+}
+
+#socialMedia{
+    margin-right:20px;
+}
+
+footer{
+    width:100%;
+    height:50px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.imageBanner{
+    width:22%;
+}
+
+.buscaBanner{
+    width:20%;
+    margin-top:10px;
+    margin-right:45px;
+}
+
+.principalNav{
+    margin-left:5%;
+}
+
+.navSocial{
+    width:12%;
+}
+
+.capaBaixo{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+
+.footer strong{
+    font-size:20px;
+}
+
+.logoBackground{
+    background:#216191;
+}
+
+.logoColor {
+    color:#216191;
+}
+
+.terceiraCor{
+    background:#216191;
+}
+
+.navbaixo{
+    border-top:solid ;
+    border-top-color:#03367b;
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.navcima{
+    border-bottom:solid;
+    border-bottom-color:white;
+}
+
+.principalNav li a{
+    color:#03367b;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.crtlogobg{
+    background:#03367b ;
+}
+
+#logo{
+    width:386px;
+    height:180px;
+}
+
+#contatos ul{
+    list-style:none;
+}
+
+.lista{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+}
+
+.item-lista{
+    margin:15px;
+}
+
+.item-lista h5{
+    font-size:25px;
+}
+
+.item-lista ul{
+    list-style:none;
+}
+
+.noticias{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-direction:row;
+    flex-wrap:wrap;
+}
+
+.noticia{
+    width:150px;
+    height:350px;
+    padding:0px;
+    margin:10px;
+}
+
+.caroseu{
+   width: 100%; /* Ocupa 100% da largura do dispositivo */
+   max-width: 100%; /* Garante que a largura não ultrapasse os limites */
+   position: relative; /* Necessário se você quiser posicionar elementos dentro dela */
+   top:0;
+   margin-top:-15px;
+}
+
+.caroseu img{
+    width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
+    height: 440px; /* Ajusta a altura proporcionalmente à largura */
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorção */
+    display: block; /* Remove o espaço extra que pode ser adicionado por imagens inline */
+}
+
+.noticia a{
+    text-decoration:none;
+}
+
+.noticia img{
+    height:150px;
+    width:100px;
+    border-radius:0px;
+}
+
+.crtlogocolor{
+    color:#03367b ;
+}
+
+.contentRegistros{
+    background:#F5FBF9;
+    margin-top:-16px;
+}
+
+.cartilhas{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.cartilhas img{
+    width:500px;
+    height:300px;
+    margin:5px;
+}
+
+.sirvissos{
+    text-align:center;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.sirvissos .sirv{
+    margin:10px;
+    width:150px;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.sirvissos .sirv a{
+    text-decoration:none;
+    margin-top:10px;
+    color:black;
+}
+
+.sirvissos img{
+    width:100px;
+    height:100px;
+}
+
+.linksUteis{
+    width:100%;
+    display:flex;
+    justify-content:center;
+}
+
+.linksUteis img{
+    width:150px;
+    height:80px;
+}
+
+.tabelaPrecos{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    background:#F5FBF9;
+    padding-bottom:50px;
+}
+
+.tabelaPrecos span{
+    background:#E4EBEF;
+    margin:5px;
+    border-radius:50px;
+    padding:20px;
+}
+
+.comochegar{
+    background:#F5FBF9;
+    width:100%;
+}
+
+.registros{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.cardi{
+    width:50%;
+}
+
+.cardi .card{
+    margin:5px;
+    width:48%;
+    text-align:center;
+    align-items:center;
+}
+
+/*CARTILHAS*/
+.cartilhas {
+    display: flex; /* Itens lado a lado inicialmente */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre os itens */
+ }
+
+ .cardAnuidade img{
+    width:95%;
+    height:600px;
+ }
+ 
+ .cartilha {
+    margin:50px;
+    flex: 0 1 auto; /* Mantém os itens com tamanho padrão */
+    max-width: 400px; /* Garante que os itens não ultrapassem 500px */
+ }
+
+/*CARD EVENTOS*/
+.cardEventos{
+    width:100%;
+}
+
+.cardEventos .card{
+    width:260px;
+    height:320px;
+    padding:0px;
+    margin:3px;
+    text-decoration:none;
+}
+
+.cardEventos img{
+    height:160px;
+    width:260px;
+}
+
+.cardEventos h3{
+    font-size:15px;
+}
+
+.cardEventos p{
+    font-size:10px;
+}
+/*CONSELHEIROS*/
+
+.cardConselheiros{
+    width:100%;
+}
+
+.cardConselheiros .card{
+    height:360px;
+    width:180px;
+    padding:0px;
+    margin:3px;
+    text-align:center;
+}
+
+.cardConselheiros h3{
+    font-size:15px;
+}
+
+.cardConselheiros p{
+    font-size:15px;
+}
+/*FIM COSELHEIROS*/
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 600px) {
+    .registros .registro{
+        margin:5px;
+        width:100%;
+    }
+
+    .cardAnuidade img{
+        width:100%;
+    }
+
+    .cardEventos{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+    }
+
+    #titleEventos{
+        text-align:center;
+    }
+
+    #logo{
+        width:300px;
+        height:150px;
+    }
+
+    .tabLists{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+    }
+
+    .linhaNoticias .card{
+        margin:5px;
+    }
+
+    .tabLists .tabList{
+        width:100%;
+        margin-bottom:10px;
+    }
+
+    .mainNoticias{
+        margin-bottom:60px;
+    }
+
+    .cartilhas {
+        display: flex; /* Altera o layout para bloco (vertical) */
+        justify-content:center;
+        flex-direction:column;
+        align-items:center;
+     }
+  
+     .cartilha {
+        margin:0px;
+        margin-bottom: 20px; /* Adiciona espaçamento entre os itens */
+        justify-content:center;
+     }
+
+     .caroseu img{
+        height: auto;
+     }
+
+     .buscaBanner{
+        width:100%;
+        padding:10px;
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        margin-right:0px;
+     }
+
+     .imageBanner{
+        width:100%;
+     }
+
+     .cartilha img{
+        width:97%;
+     }
+  
+     .cartilha:last-child {
+        margin-bottom: 0; /* Remove o espaçamento do último item */
+     }
+
+    .registros{
+        width:100%;
+        justify-content:center;
+    }
+
+    .cardi{
+        width:100%;
+    }
+
+    .registros .card{
+        margin:5px;
+        width:90%;
+    }
+}
+
+.registros .registro{
+    margin:5px;
+    width:20%;
+}
+
+.linksUteis a{
+    text-decoration:none;
+    margin:5px;
+    color:black;
+}
+
+.editais{
+    width:100%;
+    flex-wrap:wrap;
+    display:flex;
+    justify-content:center;
+}
+
+.edital {
+    width:40%;
+    margin:10px;
+}
+
+.crtbg{
+    background:#03367b ;
+}
+
+
+.crtcolor{
+    color:#03367b ;
+}
+
+#socialMedia{
+    display:flex;
+    flex-direction:row;
+    list-style:none;
+    
+}
+
+#socialMedia li{
+    margin-left:5px;
+    background:#6B98B7;
+    padding:1px;
+    width:30px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:30px;
+}
+
+#socialMedia li:hover{
+    background:#17517C;
+}
+
+#socialMedia li a{
+    color:white;
+    padding:5px;
+}
+
+#socialMedia i{
+    font-size:15px;
+}

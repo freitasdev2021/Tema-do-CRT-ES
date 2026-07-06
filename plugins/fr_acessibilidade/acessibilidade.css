@@ -1,0 +1,86 @@
+/* styles.css */
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.prabaixo {
+    position: fixed;
+    bottom: 20px;
+    right: 80px;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000;
+    border:none;
+}
+
+/* Invert */
+body.inverted {
+    filter: invert(100%);
+    background-color: black;
+}
+
+/* High Contrast */
+body.high-contrast {
+    background-color: black;
+    color: white;
+}
+
+body.fontegrande{
+    font-size:30px;
+}
+
+body.high-contrast a {
+    color: yellow;
+}
+
+/* High Brightness */
+body.high-brightness {
+    filter: brightness(150%);
+}
+
+/* Grayscale */
+body.grayscale {
+    filter: grayscale(100%);
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #f8f9fa;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    z-index: 999;
+}
+
+.side-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.side-menu ul li {
+    margin: 15px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.side-menu.active {
+    right: 0;
+}
