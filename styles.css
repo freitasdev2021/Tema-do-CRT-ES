@@ -1,6 +1,6 @@
 /* ==================== 1. VARIÁVEIS E RESET BÁSICO ==================== */
 :root {
-    --primary-color: #001969; /* Azul escuro principal */
+    --primary-color: #1a5784; /* Azul escuro principal */
     --secondary-color: #ffff; /* Dourado/Amarelo para destaque */
     --text-color: #333;
     --light-bg: #f8f9fa;
@@ -92,7 +92,7 @@ ul {
 
 .social ul li a i{
     background:white;
-    color: #001969;
+    color: #3960a4;
     padding:7px;
     border-radius:3px;
 }
@@ -112,7 +112,7 @@ ul {
 /* ==================== 3. HEADER & NAVEGAÇÃO ==================== */
 
 .header-cima {
-    background-color: #001969;
+    background-color: #3960a4;
     color: var(--text-color);
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     /* position: sticky; */
@@ -695,7 +695,7 @@ ul {
 
 /* ==================== 9. FOOTER ==================== */
 .footer {
-    background-color: #0d2a4d; /* Azul mais escuro que o primário */
+    background-color: #1a5784; /* Azul mais escuro que o primário */
     color: white;
     padding: 50px 0 20px;
     font-size: 0.9em;
@@ -818,7 +818,7 @@ ul {
     }
     .header .menu-toggle {
         display: block; /* Mostra o botão hambúrguer */
-        background:#001969;
+        background:#3960a4;
     }
     
     /* Animação do hambúrguer para X */
