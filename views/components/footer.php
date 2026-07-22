@@ -43,7 +43,7 @@ $Popup = [
                 <div>
                     <img src="/img/camaraPerdoesRodape.png" width="200px" height="100px" alt="Logo Prefeitura Rodapé">
                 </div>
-                <p>© 2026 Câmara Municipal de Perdões. Todos os direitos reservados.</p>
+                <p>© 2026 Conselho Regional dos Técnicos Industriais do Espirito Santo. Todos os direitos reservados.</p>
             </div>
             <div class="footer-col">
                 <h4>Navegação</h4>
@@ -127,6 +127,40 @@ $Popup = [
                     openPopup(popupData.imagem);
                 }, 800);
             }
+        });
+    </script>
+    <script>
+        // Certifique-se de executar isso após o carregamento do Swiper.js
+        const swiperNoticias = new Swiper('#noticias', {
+            // Configurações básicas
+            slidesPerView: 1,
+            spaceBetween: 20,
+            loop: false, // Mude para true se quiser rolagem infinita
+
+            // Setas de navegação
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // Responsividade (Breakpoints)
+            breakpoints: {
+                // Telas de celulares deitados / tablets pequenos
+                576: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                // Tablets padrão
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 20,
+                },
+                // Desktop (Exatamente igual ao seu print)
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 24,
+                },
+            },
         });
     </script>
 </body>
