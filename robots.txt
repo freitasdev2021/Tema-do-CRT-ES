@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /api.php
+Disallow: /env.php
+Disallow: /router.php
+
+Sitemap: https://crtes.gov.br/sitemap.xml

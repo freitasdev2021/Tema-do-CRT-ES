@@ -3,7 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conselho Regional dos Técnicos Industriais do Espirito Santo</title>
+    <title><?= htmlspecialchars($SEO['Title']) ?> - CRT-ES | Conselho Regional dos Técnicos Industriais do Espírito Santo</title>
+    <meta name="description" content="<?= htmlspecialchars($SEO['Description']) ?>" />
+    <meta name="keywords" content="CRT-ES, Conselho Regional dos Técnicos Industriais, Espírito Santo, técnicos industriais, registro profissional, fiscalização, TRT, SINCETI, anuidade, CFT" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="CRT-ES - Conselho Regional dos Técnicos Industriais do Espírito Santo" />
+    <meta name="language" content="pt-br" />
+    <link rel="canonical" href="<?= htmlspecialchars($canonicalUrl) ?>" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="<?= htmlspecialchars($canonicalUrl) ?>" />
+    <meta property="og:title" content="<?= htmlspecialchars($SEO['Title']) ?> - CRT-ES" />
+    <meta property="og:description" content="<?= htmlspecialchars($SEO['Description']) ?>" />
+    <meta property="og:image" content="https://<?= $_SERVER['HTTP_HOST'] ?>/img/logobranca.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="CRT-ES" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="<?= htmlspecialchars($canonicalUrl) ?>" />
+    <meta name="twitter:title" content="<?= htmlspecialchars($SEO['Title']) ?> - CRT-ES" />
+    <meta name="twitter:description" content="<?= htmlspecialchars($SEO['Description']) ?>" />
+    <meta name="twitter:image" content="https://<?= $_SERVER['HTTP_HOST'] ?>/img/logobranca.png" />
+
+    <!-- Schema.org JSON-LD (Dados Estruturados) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CRT-ES - Conselho Regional dos Técnicos Industriais do Espírito Santo",
+      "url": "https://<?= $_SERVER['HTTP_HOST'] ?>/",
+      "logo": "https://<?= $_SERVER['HTTP_HOST'] ?>/img/logobranca.png",
+      "description": "Conselho Regional dos Técnicos Industriais do Espírito Santo - Autarquia federal responsável pelo registro, fiscalização e regulamentação profissional dos técnicos industriais.",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Nossa Srª dos Navegantes, Edifício Palácio do Café, 675 - 6º Andar, Enseada do Suá",
+        "addressLocality": "Vitória",
+        "addressRegion": "ES",
+        "postalCode": "29050-912",
+        "addressCountry": "BR"
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-27-3100-2019",
+          "contactType": "customer service",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese"
+        },
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-27-3014-8008",
+          "contactType": "customer service",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/crtespiritosanto",
+        "https://www.youtube.com/channel/UC8FQBtUYfMg5haPYKaXo7xw",
+        "https://br.linkedin.com/company/crt-es",
+        "https://www.instagram.com/crt_es/"
+      ]
+    }
+    </script>
+
+    <!-- BreadcrumbList Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Início",
+          "item": "https://<?= $_SERVER['HTTP_HOST'] ?>/"
+        }<?php if ($uri_path !== '/'): ?>
+        ,{
+          "@type": "ListItem",
+          "position": 2,
+          "name": "<?= htmlspecialchars($SEO['Title']) ?>",
+          "item": "<?= htmlspecialchars($canonicalUrl) ?>"
+        }
+        <?php endif; ?>
+      ]
+    }
+    </script>
+
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/acessibilidade.css">
     <link rel="icon" href="/img/icon.ico"/>
