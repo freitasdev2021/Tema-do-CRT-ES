@@ -647,22 +647,48 @@
 document.addEventListener('DOMContentLoaded', function() {
     const abas = document.querySelectorAll('.aba-link[data-aba]');
     
+    // Função para ativar uma aba pelo nome
+    function ativarAba(nomeAba) {
+        const conteudos = document.querySelectorAll('.aba-conteudo');
+        const links = document.querySelectorAll('.aba-link');
+        
+        // Remove active de todos
+        links.forEach(function(l) { l.classList.remove('ativo'); });
+        conteudos.forEach(function(c) { c.classList.remove('ativo'); });
+        
+        // Ativa o botão e conteúdo correspondente
+        const botaoAlvo = document.querySelector('.aba-link[data-aba="' + nomeAba + '"]');
+        const conteudoAlvo = document.getElementById('aba-' + nomeAba);
+        
+        if (botaoAlvo && conteudoAlvo) {
+            botaoAlvo.classList.add('ativo');
+            conteudoAlvo.classList.add('ativo');
+            
+            // Scroll até as abas
+            botaoAlvo.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+    }
+    
+    // Evento de clique nas abas
     abas.forEach(function(aba) {
         aba.addEventListener('click', function(e) {
             e.preventDefault();
-            
             const abaAlvo = this.getAttribute('data-aba');
-            const conteudos = document.querySelectorAll('.aba-conteudo');
-            const links = document.querySelectorAll('.aba-link');
-            
-            // Remove active de todos
-            links.forEach(function(l) { l.classList.remove('ativo'); });
-            conteudos.forEach(function(c) { c.classList.remove('ativo'); });
-            
-            // Ativa o clicado
-            this.classList.add('ativo');
-            document.getElementById('aba-' + abaAlvo).classList.add('ativo');
+            ativarAba(abaAlvo);
+            // Atualiza o hash da URL sem recarregar a página
+            history.replaceState(null, null, '#' + abaAlvo);
         });
     });
+    
+    // Verifica o hash da URL ao carregar a página
+    var hash = window.location.hash.substring(1); // Remove o #
+    if (hash) {
+        // Suporte para hash no formato #anuidadezero (vindo do header)
+        var hashMap = {
+            'anuidadezero': 'anuidade'
+        };
+        var abaNome = hashMap[hash] || hash;
+        ativarAba(abaNome);
+    }
 });
 </script>

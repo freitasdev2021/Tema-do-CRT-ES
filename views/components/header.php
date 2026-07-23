@@ -470,8 +470,8 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
                 Fiscalização
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
-            <li><a class="dropdown-item" href="/Fiscalizacao#aba-fiscalizamos" >O que fiscalizamos</a></li>
-            <li><a class="dropdown-item" href="/Fiscalizacao#aba-equipe" >Equipe de Fiscalização</a></li>
+            <li><a class="dropdown-item" href="/Fiscalizacao#fiscalizamos" >O que fiscalizamos</a></li>
+            <li><a class="dropdown-item" href="/Fiscalizacao#equipe" >Equipe de Fiscalização</a></li>
             <li><a class="dropdown-item" href="https://corporativo.sinceti.net.br/app/view/sight/externo.php?form=CadastrarDenuncia" target="_blank">Realizar Denuncia</a></li>
             <li><a class="dropdown-item" href="https://corporativo.sinceti.net.br/app/view/sight/externo.php?form=PesquisarDenuncia" target="_blank">Pesquisar Denuncia</a></li>
             <li><a class="dropdown-item" href="https://www.cft.org.br/plano-nacional-de-fiscalizacao-integrada/" target="_blank">Plano Nacional de Fiscalização Integrada</a></li>
@@ -485,10 +485,10 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
             <li><a class="dropdown-item" href="/Noticias" >Notícias</a></li>
-            <li><a class="dropdown-item" href="/Comunicacao" >Galeria</a></li>
-            <li><a class="dropdown-item" href="/Comunicacao" >Tutoriais e Documentos</a></li>
-            <li><a class="dropdown-item" href="/Comunicacao" >Podcasts</a></li>
-            <li><a class="dropdown-item" href="/Comunicacao" >Agendar Palestra e Reuniões</a></li>
+            <li><a class="dropdown-item" href="/Comunicacao#galeria" >Galeria</a></li>
+            <li><a class="dropdown-item" href="/Comunicacao#tutoriais" >Tutoriais e Documentos</a></li>
+            <li><a class="dropdown-item" href="/Comunicacao#podcasts" >Podcasts</a></li>
+            <li><a class="dropdown-item" href="/Comunicacao#painel" >Agendar Palestra e Reuniões</a></li>
             <li><a class="dropdown-item" href="/Comunicacao" >Imprensa</a></li>
             </ul>
         </li>
@@ -499,7 +499,7 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
             </a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
             <li><a class="dropdown-item" href="https://tecnicoquefaz.crtes.gov.br/" >Técnico que Faz</a></li>
-            <li><a class="dropdown-item" href="/Comunicacao#anuidadezero" >Anuidade Zero</a></li>
+            <li><a class="dropdown-item" href="/Comunicacao#anuidade" >Anuidade Zero</a></li>
             <li><a class="dropdown-item" href="/Parceiros" >Parcerias com Desconto</a></li>
             <li><a class="dropdown-item" href="https://radaria.crtes.gov.br/" >Radar.IA</a></li>
             </ul>
