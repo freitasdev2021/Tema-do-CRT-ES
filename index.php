@@ -17,7 +17,12 @@ $rotas = [
     ["path" => "/perguntas-frequentes", "file" => "perguntasfrequentes.php", "Title" => "Perguntas Frequentes"],
     ["path" => "/e-sic", "file" => "sic.php", "Title" => "e-Sic"],
     ["path" => "/mapa-site", "file" => "mapasite.php", "Title" => "Mapa do Site"],
-    ["path" => "/processos-seletivos", "file" => "processosseletivos.php", "Title" => "Processos Seletivos"]
+    ["path" => "/processos-seletivos", "file" => "processosseletivos.php", "Title" => "Processos Seletivos"],
+    ["path" => "/sei", "file" => "sei.php", "Title" => "Portal SEI"],
+    ["path" => "/dividaativa", "file" => "dividaativa.php", "Title" => "Divida Ativa"],
+    ["path" => "/Fiscalizacao", "file" => "fiscalizacao.php", "Title" => "Fiscalizacao"],
+    ["path" => "/Comunicacao", "file" => "comunicacao.php", "Title" => "Comunicação"],
+    ["path" => "/Parceiros", "file" => "parceiros.php", "Title" => "Parceiros"]
 ];
 
 $Pagina = null;
