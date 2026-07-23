@@ -22,7 +22,8 @@ $rotas = [
     ["path" => "/dividaativa", "file" => "dividaativa.php", "Title" => "Divida Ativa"],
     ["path" => "/Fiscalizacao", "file" => "fiscalizacao.php", "Title" => "Fiscalizacao"],
     ["path" => "/Comunicacao", "file" => "comunicacao.php", "Title" => "Comunicação"],
-    ["path" => "/Parceiros", "file" => "parceiros.php", "Title" => "Parceiros"]
+    ["path" => "/Parceiros", "file" => "parceiros.php", "Title" => "Parceiros"],
+    ["path" => "/Fale", "file" => "fale.php", "Title" => "Fale com o CRT-ES"]
 ];
 
 $Pagina = null;

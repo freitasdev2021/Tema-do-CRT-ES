@@ -376,19 +376,19 @@ new window.VLibras.Widget('https://vlibras.gov.br/app');
             <a class="nav-link" href="https://www.cft.org.br/ouvidoria/">Ouvidoria</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="">Fale com o CRT-ES</a>
+            <a class="nav-link" href="/Fale">Fale com o CRT-ES</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="">Perguntas Frequentes</a>
+            <a class="nav-link" href="/perguntas-frequentes">Perguntas Frequentes</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="">Portal SEI</a>
+            <a class="nav-link" href="/sei">Portal SEI</a>
             </li>
         </ul>
         <!-- Lista do lado direito -->
         <ul class="mb-3 mb-lg-0" style="margin-right:0px;">
             <li class="nav-item">
-            <a class="nav-link" href="">Mapa do Site</a>
+            <a class="nav-link" href="/mapa-site">Mapa do Site</a>
             </li>
         </ul>
         </div>
